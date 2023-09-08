@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
 import logo from "../Images/logo.png";
+import { NavLink } from "react-router-dom";
 
 import { VscHeart } from "react-icons/vsc";
 
@@ -45,9 +46,12 @@ export const Navbar = () => {
           }}
         >Weddings</Flex>
 
+        <NavLink to = "/" >
         <Box>Isha Garden</Box>
+        </NavLink>
 
-        <Flex direction={"column"}
+       <NavLink to = "/gallery" >
+       <Flex direction={"column"}
         border={"1px solid black"}
           sx={{
             "&::before": {
@@ -60,7 +64,10 @@ export const Navbar = () => {
             },
           }}
         >Gallery</Flex>
+       </NavLink>
+       
 
+<NavLink to = "/contact">
 <Flex direction={"column"}
         border={"1px solid black"}
           sx={{
@@ -73,7 +80,9 @@ export const Navbar = () => {
             },
           }}
         >Contact</Flex>
+</NavLink>
       </Flex>
+
     </>
   );
 };
