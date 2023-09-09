@@ -66,7 +66,7 @@ export const HomePage = () => {
             alt=""
           />
         </GridItem>
-        <GridItem h="600px" bg="pink.200"></GridItem>
+        <GridItem h="600px" bg="rgb(254,186,171)"></GridItem>
         <GridItem h="600px" overflow={"hidden"}>
           <img
             src="https://images.pexels.com/photos/18183697/pexels-photo-18183697/free-photo-of-smiling-newlyweds-on-wedding-ceremony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
