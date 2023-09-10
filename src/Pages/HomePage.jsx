@@ -8,7 +8,10 @@ import { HeaderImage } from "../Components/HeaderImage";
 export const HomePage = () => {
   return (
     <div>
-      <HeaderImage src={headerImage} text = {"Your Wedding, Your Way, Our Venue"} />
+      <HeaderImage
+        src={headerImage}
+        text={"Your Wedding, Your Way, Our Venue"}
+      />
 
       <Flex
         width="97%"
@@ -19,8 +22,33 @@ export const HomePage = () => {
         align="center"
         mb="10"
       >
-        <Box w="70%" h="50%" bg="white">
-          <Text></Text>
+        <Box p="6" w="70%" bg="white">
+          <Text mb = "5">Welcome To</Text>
+          <Text fontSize={"4xl"} fontWeight = "bold" fontFamily = "'Great Vibes', cursive">Isha Garden</Text>
+          <Flex mt = "5" mb = "5" justify={"space-around"} >
+            <Text  color = "#faa592" fontSize={"2xl"} fontWeight = "bold"  fontFamily = "'Great Vibes', cursive" >Enchanting Garden Oasis</Text>
+            <Text  color = "#faa592" fontSize={"2xl"}  fontWeight = "bold"   fontFamily = "'Great Vibes', cursive">Nature's Perfect Wedding Setting</Text>
+            <Text  color = "#faa592" fontSize={"2xl"}  fontWeight = "bold"   fontFamily = "'Great Vibes', cursive">Serene Outdoor Elegance</Text>
+          </Flex>
+          <Text align={"center"}  fontFamily = "'Great Vibes', cursive"  fontSize={"2xl"}>
+            The Venue is an inviting and serene location for weddings,
+            receptions, and other special occasions. Located in a picturesque
+            setting, this charming venue offers a tranquil escape for those
+            seeking a romantic and memorable experience.
+          </Text>
+          <Text  align={"center"}  fontFamily = "'Great Vibes', cursive" fontSize={"2xl"}>
+            Originally designed with weddings in mind, the venue has blossomed
+            into a versatile and award-winning destination for a wide range of
+            events. The Event Space is adaptable, making it equally suitable for
+            hosting elegant weddings as it is for hosting intimate garden
+            ceremonies and outdoor celebrations.
+          </Text>
+          <Text   align={"center"} fontFamily = "'Great Vibes', cursive" fontSize={"2xl"}>
+            As the sun sets behind the picturesque landscape, you'll come to
+            understand why the Venue is more than just a place to
+            host events; it's a captivating and enchanting Gathering Place for
+            love and celebration.
+          </Text>
         </Box>
       </Flex>
       <Flex width="97%" margin={"auto"} h="90vh">
