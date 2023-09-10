@@ -49,7 +49,7 @@ export const Navbar = () => {
         >Weddings</Flex>
 
         <NavLink to = "/" >
-          <img src={logo} style = {{width : "400px"}} alt="" />
+          <img src={logo} style = {{width : "360px"}} alt="" />
         </NavLink>
 
        <NavLink to = "/gallery" >

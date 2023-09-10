@@ -1,14 +1,21 @@
 import React from "react";
 import { Box } from "@chakra-ui/react";
 import { Navbar } from "./Navbar";
-import { Text,Flex } from "@chakra-ui/react";
-import styled, {keyframes} from "styled-components"
-
+import { Text, Flex } from "@chakra-ui/react";
+import styled, { keyframes } from "styled-components";
+import { NavMobile } from "./NavMobile";
 
 export const HeaderImage = ({ src, text }) => {
   return (
     <>
-      <Box pos={"relative"} h="85vh">
+
+<NavMob>
+
+<NavMobile />
+
+</NavMob>
+
+      <Box pos={"relative"} h={{ base: "90vh", lg: "85vh" }}>
         <img
           src={src}
           style={{
@@ -21,29 +28,28 @@ export const HeaderImage = ({ src, text }) => {
         />
 
         <AnimatedText
-        w = "70%"
+          w={{ base: "95%", sm: "90%", lg: "70%" }}
           color={"white"}
           pos={"absolute"}
           zIndex="1"
           fontSize={"6xl"}
-          fontFamily = "'Great Vibes', cursive"
+          fontFamily="'Great Vibes', cursive"
           fontWeight={"bold"}
           top="50%"
           left="50%"
           transform="translate(-50%,-50%)"
-          direction  = "column"
+          direction="column"
         >
           {text}
         </AnimatedText>
       </Box>
 
-      <div style={{ position: "sticky", top: 0 }}>
+      <Nav style={{ position: "sticky", top: 0 }}>
         <Navbar />
-      </div>
+      </Nav>
     </>
   );
 };
-
 
 const animatedText = keyframes`
 
@@ -59,19 +65,39 @@ const animatedText = keyframes`
   opacity : 1;
 }
 
-`
-
+`;
 
 const AnimatedText = styled(Flex)`
+  animation: ${animatedText} 2s ease-in-out;
+  position: relative;
 
-animation : ${animatedText} 2s ease-in-out;
-position : relative;
+  &::after {
+    content: url("https://starpng.com/public/uploads/preview/download-leaf-divider-png-image-115769370303lpoccbgyj.png");
+    filter: brightness(0) invert(1);
+  }
 
-&::after {
+  @media (max-width: 480px) {
+    &::after {
+      content: url("https://starpng.com/public/uploads/preview/download-leaf-divider-png-image-115769370303lpoccbgyj.png");
+      filter: brightness(0) invert(1);
+      display: none;
+    }
+  }
+`;
 
-  content : url("https://starpng.com/public/uploads/preview/download-leaf-divider-png-image-115769370303lpoccbgyj.png");
-  filter : brightness(0) invert(1);
+const Nav = styled.div`
+  @media (max-width: 480px) {
+    display: none;
+  }
+`;
 
-}
+
+const NavMob = styled.div`
+  
+  display : none;
+
+  @media (max-width : 480px){
+    display : block;
+  }
 
 `

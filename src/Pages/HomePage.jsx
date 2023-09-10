@@ -10,36 +10,43 @@ export const HomePage = () => {
     <div>
       <HeaderImage
         src={headerImage}
-        text={"Your Wedding, Your Way, Our Venue"}
+        text={"Your Wedding , Your Way , Our Venue"}
       />
 
       <Flex
         width="97%"
         margin={"auto"}
-        h="80vh"
+        h={{ base: "85vh", lg: "80vh" }}
         bgImage="url(https://images.pexels.com/photos/6387657/pexels-photo-6387657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)"
         justify={"center"}
         align="center"
         mb="10"
+        mt={{ base: "10", lg: "0" }}
       >
         <Box
           shadow="rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"
-          p="6"
-          w="70%"
+          p={{ base: "2", lg: "6" }}
+          w={{ base: "90%", lg: "70%" }}
           bg="white"
         >
           <Text mb="5">Welcome To</Text>
           <Text
-            fontSize={"4xl"}
+            fontSize={{ base: "lg", lg: "4xl" }}
             fontWeight="bold"
             fontFamily="'Great Vibes', cursive"
           >
             Isha Garden
           </Text>
-          <Flex mt="5" mb="5" justify={"space-around"}>
+          <Flex
+            direction={{ base: "column", lg: "row" }}
+            gap={{ base: "2", lg: "0" }}
+            mt="5"
+            mb="5"
+            justify={"space-around"}
+          >
             <Text
               color="#faa592"
-              fontSize={"2xl"}
+              fontSize={{ base: "mb", lg: "3xl" }}
               fontWeight="bold"
               fontFamily="'Great Vibes', cursive"
             >
@@ -47,7 +54,7 @@ export const HomePage = () => {
             </Text>
             <Text
               color="#faa592"
-              fontSize={"2xl"}
+              fontSize={{ base: "mb", lg: "3xl" }}
               fontWeight="bold"
               fontFamily="'Great Vibes', cursive"
             >
@@ -55,7 +62,7 @@ export const HomePage = () => {
             </Text>
             <Text
               color="#faa592"
-              fontSize={"3xl"}
+              fontSize={{ base: "mb", lg: "3xl" }}
               fontWeight="bold"
               fontFamily="'Great Vibes', cursive"
             >
@@ -64,10 +71,8 @@ export const HomePage = () => {
           </Flex>
           <Text
             align={"center"}
-            // fontFamily="'Great Vibes', cursive"
-            // fontFamily={"'Yellowtail', cursive"}
             fontFamily="'Gloria Hallelujah', cursive;"
-            fontSize={"xl"}
+            fontSize={{ base: "md", lg: "xl" }}
           >
             The Venue is an inviting and serene location for weddings,
             receptions, and other special occasions. Located in a picturesque
@@ -77,7 +82,7 @@ export const HomePage = () => {
           <Text
             align={"center"}
             fontFamily="'Gloria Hallelujah', cursive;"
-            fontSize={"xl"}
+            fontSize={{ base: "md", lg: "xl" }}
           >
             Originally designed with weddings in mind, the venue has blossomed
             into a versatile and award-winning destination for a wide range of
@@ -88,7 +93,7 @@ export const HomePage = () => {
           <Text
             align={"center"}
             fontFamily="'Gloria Hallelujah', cursive;"
-            fontSize={"xl"}
+            fontSize={{ base: "md", lg: "xl" }}
           >
             As the sun sets behind the picturesque landscape, you'll come to
             understand why the Venue is more than just a place to host events;
@@ -97,8 +102,17 @@ export const HomePage = () => {
           </Text>
         </Box>
       </Flex>
-      <Flex width="97%" margin={"auto"} h="90vh">
-        <Box width="50%" overflow={"hidden"}>
+      <Flex
+        width="97%"
+        margin={"auto"}
+        h={{ base: "auto", lg: "90vh" }}
+        direction={{ base: "column", lg: "row" }}
+      >
+        <Box
+          width={{ base: "90%", lg: "50%" }}
+          m={{ base: "auto", lg: "0" }}
+          overflow={{ base: "none", lg: "hidden" }}
+        >
           <img
             src="https://images.pexels.com/photos/12668995/pexels-photo-12668995.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
@@ -107,24 +121,27 @@ export const HomePage = () => {
 
         <Flex
           direction={"column"}
-          width="50%"
+          width={{ base: "95%", lg: "50%" }}
           justify={"center"}
           align="center"
-          p="10"
+          p={{ base: "5", lg: "10" }}
         >
-          <Text fontSize={"2xl"} fontFamily="'Gloria Hallelujah', cursive;">
+          <Text
+            fontSize={{ base: "lg", lg: "2xl" }}
+            fontFamily="'Gloria Hallelujah', cursive;"
+          >
             STUNNING ASHEVILLE WEDDING VENUE
           </Text>
           <Text
             color="#faa592"
             fontFamily="'Great Vibes', cursive"
-            fontSize={"6xl"}
+            fontSize={{ base: "3xl", lg: "6xl" }}
           >
             Weddings
           </Text>
           <Text
-            mb="5"
-            fontSize={"xl"}
+            mb={{ base: "2", lg: "5" }}
+            fontSize={{ base: "md", lg: "xl" }}
             fontFamily="'Gloria Hallelujah', cursive;"
           >
             There is no such thing as a “standard wedding” here at The Farm;
@@ -133,8 +150,8 @@ export const HomePage = () => {
             local vendors will help you bring your vision to life.
           </Text>
           <Text
-            mb="10"
-            fontSize={"xl"}
+            mb={{ base: "2", lg: "10" }}
+            fontSize={{ base: "md", lg: "xl" }}
             fontFamily="'Gloria Hallelujah', cursive"
           >
             Our facilities are versatile and accommodating, designed to
@@ -152,7 +169,7 @@ export const HomePage = () => {
             }}
             bg="white"
             fontFamily="'Great Vibes', cursive"
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", lg: "2xl" }}
             color="#faa592"
             sx={{
               "&::before": {
@@ -199,28 +216,34 @@ export const HomePage = () => {
         </Flex>
       </Flex>
 
-      <Grid width="97%" margin={"auto"} gridTemplateColumns="repeat(2,1fr)">
-        {/* <GridItem  h="50vh"  p = "10" > */}
+      <Grid
+        width="97%"
+        margin={"auto"}
+        gridTemplateColumns={{ base: "repeat(1,1fr)", lg: "repeat(2,1fr)" }}
+      >
         <Flex
-          h="50vh"
-          p="10"
+          h={{ base: "auto", lg: "50vh" }}
+          p={{ base: "5", lg: "10" }}
           direction={"column"}
           justify="center"
           align="center"
         >
-          <Text fontSize={"2xl"} fontFamily="'Gloria Hallelujah', cursive;">
+          <Text
+            fontSize={{ base: "lg", lg: "2xl" }}
+            fontFamily="'Gloria Hallelujah', cursive;"
+          >
             CORPORATE EVENTS, REUNIONS & GETAWAYS
           </Text>
           <Text
             color="#faa592"
             fontFamily="'Great Vibes', cursive"
-            fontSize={"6xl"}
+            fontSize={{ base: "3xl", lg: "6xl" }}
           >
             Gather at Our Venue
           </Text>
           <Text
-            mb="5"
-            fontSize={"xl"}
+            mb={{ base: "2", lg: "5" }}
+            fontSize={{ base: "md", lg: "xl" }}
             fontFamily="'Gloria Hallelujah', cursive;"
           >
             The Venue is a top destination spot for weddings, reunions,
@@ -238,7 +261,7 @@ export const HomePage = () => {
             }}
             bg="white"
             fontFamily="'Great Vibes', cursive"
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", lg: "2xl" }}
             color="#faa592"
             sx={{
               "&::before": {
@@ -283,40 +306,42 @@ export const HomePage = () => {
             Learn More
           </Button>
         </Flex>
-        {/* </GridItem> */}
-        <GridItem h="50vh">
+        <GridItem h={{ base: "auto", lg: "50vh" }} mb={{ base: "3", lg: "0" }}>
           <img
             src="https://images.pexels.com/photos/10360901/pexels-photo-10360901.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
             style={{ objectFit: "cover", height: "100%", width: "100%" }}
           />
         </GridItem>
-        <GridItem h="50vh" overflow={"hidden"}>
+        <GridItem h={{ base: "auto", lg: "50vh" }} overflow={"hidden"}>
           <img
             src="https://images.pexels.com/photos/587741/pexels-photo-587741.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
           />
         </GridItem>
         <Flex
-          h="50vh"
-          p="10"
+          h={{ base: "auto", lg: "50vh" }}
+          p={{ base: "5", lg: "10" }}
           direction={"column"}
           justify="center"
           align="center"
         >
-          <Text fontSize={"2xl"} fontFamily="'Gloria Hallelujah', cursive;">
+          <Text
+            fontSize={{ base: "lg", lg: "2xl" }}
+            fontFamily="'Gloria Hallelujah', cursive;"
+          >
             CUSTOM MENUS, PRIVATE EVENTS & CLASSES
           </Text>
           <Text
             color="#faa592"
             fontFamily="'Great Vibes', cursive"
-            fontSize={"6xl"}
+            fontSize={{ base: "3xl", lg: "6xl" }}
           >
             Eat in The Kitchen
           </Text>
           <Text
-            mb="5"
-            fontSize={"xl"}
+            mb={{ base: "2", lg: "5" }}
+            fontSize={{ base: "md", lg: "xl" }}
             fontFamily="'Gloria Hallelujah', cursive;"
           >
             The Venue's Kitchen’s kitchen-to-table philosophy sets our venue
@@ -334,7 +359,7 @@ export const HomePage = () => {
             }}
             bg="white"
             fontFamily="'Great Vibes', cursive"
-            fontSize={"2xl"}
+            fontSize={{ base: "xl", lg: "2xl" }}
             color="#faa592"
             sx={{
               "&::before": {
@@ -385,21 +410,20 @@ export const HomePage = () => {
         width="97%"
         margin={"auto"}
         justifyContent="center"
-        gap="70"
-        mt="10"
-        // mb="10"
-        gridTemplateColumns="repeat(3,1fr)"
-        pl="20"
-        pr="20"
+        gap={{ base: "10", lg: "70" }}
+        mt={{ base: "4", lg: "10" }}
+        gridTemplateColumns={{ base: "repeat(1,1fr)", lg: "repeat(3,1fr)" }}
+        pl={{ base: "2", lg: "20" }}
+        pr={{ base: "2", lg: "20" }}
       >
-        <GridItem h="600px">
+        <GridItem h={{ base: "auto", lg: "600px" }}>
           <img
             src="https://images.pexels.com/photos/673659/pexels-photo-673659.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
           />
         </GridItem>
         <GridItem h="600px" bg="rgb(254,186,171)"></GridItem>
-        <GridItem h="600px" overflow={"hidden"}>
+        <GridItem h={{ base: "auto", lg: "600px" }} overflow={"hidden"}>
           <img
             src="https://images.pexels.com/photos/18183697/pexels-photo-18183697/free-photo-of-smiling-newlyweds-on-wedding-ceremony.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
