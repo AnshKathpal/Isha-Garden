@@ -1,12 +1,13 @@
 import React from 'react'
 import {Box} from "@chakra-ui/react"
 import { Navbar } from './Navbar'
+import { Text } from '@chakra-ui/react'
 
-export const HeaderImage = ({src}) => {
+export const HeaderImage = ({src,text}) => {
   return (
     <>
 
-    <Box h="90vh">
+    <Box h="85vh">
         <img
           src={src}
           style={{
@@ -17,7 +18,12 @@ export const HeaderImage = ({src}) => {
           }}
           alt=""
         />
+
+<Text fontSize={"3xl"} pos = "absolute">{text}</Text>
+        
       </Box>
+
+      
 
       <div style={{ position: "sticky", top: 0, zIndex: "100" }}>
         <Navbar />
