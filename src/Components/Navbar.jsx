@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Flex } from "@chakra-ui/react";
-import logo from "../Images/logo.png";
+import logo from "../Images/logo2.jpg";
 import { NavLink } from "react-router-dom";
 
 import { VscHeart } from "react-icons/vsc";
@@ -10,14 +10,16 @@ export const Navbar = () => {
     <>
       <Flex
         justify="center"
-        alignItems="flex-end"
-        border="1px solid green"
+        alignItems="center"
+        shadow="rgba(254, 186, 171, 0.2) 0px 2px 8px 0px;"
         bg="white"
-        h="10vh"
+        h="15vh"
         gap="40"
       >
         <Flex direction={"column"}
-        border={"1px solid black"}
+        color = "#faa592"
+        fontFamily="'Permanent Marker', cursive"
+        fontSize={"2xl"}
         sx={{
           "&::before": {
             content: '""',
@@ -28,34 +30,35 @@ export const Navbar = () => {
           },
         }}
         >
-            <Box>
           Our Story
-            </Box>
         </Flex>
 
         <Flex direction={"column"}
-        border={"1px solid black"}
+        fontFamily="'Permanent Marker', cursive"
           sx={{
             "&::before": {
-              content: '"check"',
+              content: '""',
               opacity: "0",
             },
             "&:hover::before": {
               opacity: "1",
             },
           }}
+          color = "#faa592"
+          fontSize={"2xl"}
         >Weddings</Flex>
 
         <NavLink to = "/" >
-        <Box>Isha Garden</Box>
+          <img src={logo} style = {{width : "400px"}} alt="" />
         </NavLink>
 
        <NavLink to = "/gallery" >
        <Flex direction={"column"}
-        border={"1px solid black"}
+       fontFamily="'Permanent Marker', cursive"
+        color = "#faa592"
           sx={{
             "&::before": {
-              content: '"check"',
+              content: '""',
               opacity: "0",
               transition : " opacity 0.3s"
             },
@@ -63,16 +66,18 @@ export const Navbar = () => {
               opacity: "1",
             },
           }}
+          fontSize={"2xl"}
         >Gallery</Flex>
        </NavLink>
        
 
 <NavLink to = "/contact">
-<Flex direction={"column"}
-        border={"1px solid black"}
+<Flex fontFamily="'Permanent Marker', cursive" direction={"column"}
+        color = "#faa592"
+        fontSize={"2xl"}
           sx={{
             "&::before": {
-              content: '"check"',
+              content: '""',
               opacity: "0",
             },
             "&:hover::before": {

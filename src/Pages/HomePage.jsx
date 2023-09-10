@@ -8,7 +8,7 @@ import { HeaderImage } from "../Components/HeaderImage";
 export const HomePage = () => {
   return (
     <div>
-      <HeaderImage src={headerImage} />
+      <HeaderImage src={headerImage} text = {"Your Wedding, Your Way, Our Venue"} />
 
       <Flex
         width="97%"
@@ -17,7 +17,7 @@ export const HomePage = () => {
         bgImage={headerImage}
         justify={"center"}
         align="center"
-        mb = "10"
+        mb="10"
       >
         <Box w="70%" h="50%" bg="white">
           <Text></Text>
@@ -55,7 +55,7 @@ export const HomePage = () => {
         justifyContent="center"
         gap="70"
         mt="10"
-        mb="10"
+        // mb="10"
         gridTemplateColumns="repeat(3,1fr)"
         pl="20"
         pr="20"

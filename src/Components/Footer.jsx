@@ -1,21 +1,22 @@
 import React from "react";
 import { Box, Flex, Text, Grid, GridItem } from "@chakra-ui/react";
+import logo from "../Images/logo2.jpg"
 export const Footer = () => {
   return (
     <>
-      <Box border="1px solid purple" h="90vh">
-        <Box mt="30">
-          <Text fontSize={"5xl"}>Isha Garden</Text>
+      <Box h="85vh">
+        <Box>
+          <Text fontSize={"5xl"} fontFamily="'Permanent Marker', cursive" color = "#faa592">Isha Garden</Text>
           <Text fontSize={"2xl"}>Your Wedding, Our Scenic Venue</Text>
         </Box>
 
         <Flex  justify="center" align={"center"}>
           <Flex gap = "10" direction={"column"}  m="auto" w = "20%">
-            <Text fontSize={"2xl"} >Let's Get In Touch</Text>
+            <Text fontSize={"2xl"}  fontFamily="'Permanent Marker', cursive" color = "#faa592" >Let's Get In Touch</Text>
             <hr />
             <Flex direction={"column"} >
-            <Text>anshkathpal17@gmail.com</Text>
-            <Text>8448837130</Text>
+            <Text color = "#faa592">gauravvijayran17@gmail.com</Text>
+            <Text color = "#faa592">8448837130</Text>
             </Flex>
             
           </Flex>
@@ -70,15 +71,21 @@ export const Footer = () => {
             </GridItem>
           </Grid>
           <Flex gap = "10" direction={"column"} m="auto" w = "20%">
-            <Text fontSize={"2xl"} >Share & Connect</Text>
+            <Text fontSize={"2xl"}  fontFamily="'Permanent Marker', cursive" color = "#faa592" >Share and Connect</Text>
             <hr />
             <Flex direction={"column"} >
-            <Text>Facebook</Text>
-            <Text>Instagram</Text>
+            <Text color = "#faa592">Facebook</Text>
+            <Text color = "#faa592">Instagram</Text>
             </Flex>
             
           </Flex>
         </Flex>
+
+        <Flex gap = "3" mt={"10"} direction={"column"}>
+          <Text fontSize={"2xl"}>Isha Garden, Block G, Meer Vihar, Mubarakpur Dabas, Delhi, 110081</Text>
+          <Text fontSize={"xl"}>By Gaurav Vijayran</Text>
+        </Flex>
+
       </Box>
     </>
   );
