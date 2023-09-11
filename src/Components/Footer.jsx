@@ -14,7 +14,7 @@ export const Footer = () => {
             Isha Garden
           </Text>
           <Text fontSize={"2xl"} fontFamily="'Great Vibes', cursive">
-            Your Wedding, Our Scenic Venue
+            Your Wedding, Our Scenic Venue.
           </Text>
         </Box>
 
