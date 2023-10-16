@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Isha Garden
+(Still Under Development)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Welcome to the Isha Garden wedding garden website, a perfect place to explore the beauty and facilities of our wedding garden. This readme provides an overview of the website, which is built using the React framework and Chakra UI for a visually appealing and user-friendly experience.
 
-## Available Scripts
+## Features
+- **Picture Gallery**: Browse through a stunning gallery of images showcasing our picturesque garden, perfect for hosting weddings and events.
 
-In the project directory, you can run:
+- **Facility Details**: Discover the available facilities, including the garden's capacity, catering options, decorations, and more.
 
-### `npm start`
+- **Appointment Booking**: Book an appointment to visit our wedding garden and discuss your event needs with our team.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
+### Frontend
+- **React**: The website is built using React, a JavaScript library for creating engaging and interactive user interfaces.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Chakra UI**: Chakra UI provides a set of accessible and customizable components for creating a visually appealing and responsive design, making the website user-friendly.
 
-### `npm test`
+## Installation and Setup
+1. Clone the repository from GitHub.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navigate to the project directory and run `npm install` to install the required dependencies.
 
-### `npm run build`
+3. Start the development server using `npm start`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. Access the Isha Garden website through your web browser at the specified URL (usually `http://localhost:3000`).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
+1. Open the Isha Garden website in your web browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Explore the picture gallery to view the garden's beauty and potential for hosting your special day.
 
-### `npm run eject`
+3. Navigate to the facilities section to learn about the capacity, catering options, decorations, and other available services.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Ready to discuss your event with us? Click the "Book an Appointment" button to schedule a visit to Isha Garden.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contact Us
+If you have any questions or need further assistance, feel free to contact us through the provided contact information on the website.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contributing
+We welcome contributions to the Isha Garden website. Please follow the guidelines outlined in the CONTRIBUTING.md file.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
+This website is licensed under the [MIT License](LICENSE).
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
+We'd like to thank the React and Chakra UI communities for providing the tools and resources to create this website.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Customize this README to fit your specific website's details, including contact information and any additional features you may offer.
